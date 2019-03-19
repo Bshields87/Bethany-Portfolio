@@ -2,8 +2,15 @@
 
 body, html {
     height: 100%;
-}
 
+}
+body{
+    background-color: rgba(240, 240, 236, 0.986);
+}
+.container{
+    justify-content: center;
+    background-color: rgba(240, 240, 236, 0.986);
+}
 .flex-grow {
     flex: 1 0 auto;
 }
@@ -16,13 +23,15 @@ body, html {
 }
 .navbar{
     margin: 20px;
-}
-.navbar-toggler{
-   float: right;
+    border: transparent;
 }
 .list-group-item:hover{
     background-color:rgba(0, 255, 255, 0.575);
 }
 .row{
+    margin: 20px;
+}
+.card{
+    background-color: rgb(210, 219, 205);
     margin: 20px;
 }
