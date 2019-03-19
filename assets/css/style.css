@@ -22,8 +22,12 @@ body{
     background-color: rgba(0, 255, 255, 0.308);
 }
 .navbar{
+    /*box-shadow: none !important;*/
     margin: 20px;
     border: transparent;
+}
+.material-icons {
+    font-size: 35px;
 }
 .list-group-item:hover{
     background-color:rgba(0, 255, 255, 0.575);
@@ -34,4 +38,13 @@ body{
 .card{
     background-color: rgb(210, 219, 205);
     margin: 20px;
+    text-align: center;
+}
+.about-me{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    background-color: rgb(210, 219, 205);
+}
+.photo{
+    margin: auto;
+
 }
