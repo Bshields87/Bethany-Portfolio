@@ -9,7 +9,55 @@ body{
 }
 .container{
     justify-content: center;
-    background-color: rgba(240, 240, 236, 0.986);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 42px;
+}
+.triangle1{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 250px 400px;
+border-color: transparent transparent #13385f transparent;
+transform: rotate(55deg);
+z-index: -1;
+box-shadow: 0 5px 0 0 rgba(0,0,0,.14), 0 0px 0px 0 rgba(0,0,0,.12);
+}
+.triangle2{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 250px 600px;
+border-color: transparent transparent #4b85c4 transparent;
+transform: rotate(135deg);
+z-index: -1;
+box-shadow: 0 5px 0 0 rgba(0,0,0,.14), 0 0px 0px 0 rgba(0,0,0,.12);
+}
+
+
+.triangle3{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 140px 200px;
+border-color: transparent  transparent transparent rgb(35, 140, 201);
+z-index: -1;
+
+}
+
+
+
+.row1{
+   
+    color:rgb(33, 153, 93);
+}
+.profileText{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    color: rgb(16, 16, 17);
+
 }
 .flex-grow {
     flex: 1 0 auto;
@@ -22,7 +70,7 @@ body{
     background-color: rgba(0, 255, 255, 0.308);
 }
 .navbar{
-    /*box-shadow: none !important;*/
+    box-shadow: none !important;
     margin: 20px;
     border: transparent;
 }
@@ -33,17 +81,16 @@ body{
     background-color:rgba(0, 255, 255, 0.575);
 }
 .row{
+    
     margin: 20px;
+    
 }
 .card{
     background-color: rgb(210, 219, 205);
     margin: 20px;
     text-align: center;
 }
-.about-me{
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    background-color: rgb(210, 219, 205);
-}
+
 .photo{
     margin: auto;
 
