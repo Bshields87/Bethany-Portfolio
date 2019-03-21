@@ -42,7 +42,47 @@ box-shadow: 0 5px 0 0 rgba(0,0,0,.14), 0 0px 0px 0 rgba(0,0,0,.12);
 height: 0;
 border-style: solid;
 border-width: 0 0 140px 200px;
-border-color: transparent  transparent transparent rgb(35, 140, 201);
+border-color: transparent  transparent transparent rgb(22, 52, 70);
+z-index: -1;
+
+}
+.triangle4{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 160px 100px;
+border-color: transparent  transparent transparent rgb(15, 4, 78);
+z-index: -1;
+
+}
+.triangle5{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 300px 300px 0 300px;
+border-color:  rgb(86, 183, 240) transparent  transparent transparent;
+z-index: -1;
+
+}
+.triangle6{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 50px 400px;
+border-color: transparent  transparent transparent rgb(199, 211, 32);
+z-index: -1;
+
+}
+.triangle7{
+    position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width:  50px 400px 0 50px;
+border-color: rgb(135, 143, 32) transparent  transparent transparent ;
 z-index: -1;
 
 }
