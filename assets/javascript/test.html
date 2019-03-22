@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+
+<div class="grow" id="block"></div>
+<div id="blockTwo"></div>
+
+
+<style>html,body{
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+      }
+      #block{
+        position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 50px 400px;
+border-color: transparent  transparent transparent rgb(199, 211, 32);
+z-index: -1;
+      }
+      #blockTwo{
+        position: fixed;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 160px 100px;
+border-color: transparent  transparent transparent rgb(15, 4, 78);
+z-index: -1;
+      }
+      #block, #blockTwo{
+        z-index:100;
+      }
+      #block {
+  animation: 
+    stretch
+    1.5s
+    ease-out
+    0s
+    alternate
+    infinite
+    none
+    running;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(2); }
+      </style>
+    <script>
+       
+    var isFullscreen = false;
+            $("#blockTwo").click(function (){ 
+                var prop = {};
+                var speed = 910;
+                if(!isFullscreen){ // MAXIMIZATION
+                   prop.width = "100%";
+                   prop.height = "100vh";
+                   isFullscreen = true;
+                  $("#blockTwo").animate(prop,speed); 
+                  setTimeout(function() { 
+                    $("#blockTwo").css("position","absolute");
+                  }, 920);
+                }
+                else{         
+                  prop.width = "50%";
+                  prop.height = "250px";            
+                  isFullscreen = false;
+                  $("#blockTwo").animate(prop,speed); 
+                  setTimeout(function() { 
+                    $("#blockTwo").css("position","relative"); 
+                  }, 920);
+                }
+                 });
+                 var isFullscreen = false;
+            $("#block").click(function (){ 
+                var prop = {};
+                var speed = 910;
+                if(!isFullscreen){ // MAXIMIZATION
+                   prop.width = "100%";
+                   prop.height = "100vh";
+                   isFullscreen = true;
+                  $("#block").animate(prop,speed); 
+                  setTimeout(function() { 
+                    $("#block").css("position","absolute");
+                  }, 920);
+                }
+                else{         
+                  prop.width = "50%";
+                  prop.height = "250px";            
+                  isFullscreen = false;
+                  $("#block").animate(prop,speed); 
+                  setTimeout(function() { 
+                    $("#block").css("position","relative"); 
+                  }, 920);
+                }
+                 });
+            
+                 
+            
+            </script>
+</body>
+</html>
