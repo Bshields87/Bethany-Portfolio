@@ -1,201 +1,205 @@
-
-
-body, html {
-    height: 100%;
-
-}
-body{
-    background-color: rgba(240, 240, 236, 0.986);
-}
-.container{
-    justify-content: center;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 42px;
-}
-.triangle1{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 250px 400px;
-border-color: transparent transparent #13385f transparent;
-transform: rotate(55deg);
-z-index: -1;
-box-shadow: 0 5px 0 0 rgba(0,0,0,.14), 0 0px 0px 0 rgba(0,0,0,.12);
-}
-.triangle2{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 250px 600px;
-border-color: transparent transparent #4b85c4 transparent;
-transform: rotate(135deg);
-z-index: -1;
-box-shadow: 0 5px 0 0 rgba(0,0,0,.14), 0 0px 0px 0 rgba(0,0,0,.12);
+header {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
 }
 
-
-.triangle3{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 140px 200px;
-border-color: transparent  transparent transparent rgb(22, 52, 70);
-z-index: -1;
-
-}
-.triangle4{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 160px 100px;
-border-color: transparent  transparent transparent rgb(15, 4, 78);
-z-index: -1;
-
-}
-.triangle5{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 300px 300px 0 300px;
-border-color:  rgb(86, 183, 240) transparent  transparent transparent;
-z-index: -1;
-
-}
-.triangle6{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 50px 400px;
-border-color: transparent  transparent transparent rgb(199, 211, 32);
-z-index: -1;
-
-}
-.triangle7{
-    position: fixed;
-    width: 0;
-height: 0;
-border-style: solid;
-border-width:  50px 400px 0 50px;
-border-color: rgb(135, 143, 32) transparent  transparent transparent ;
-z-index: -1;
-
+.header__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#c0c49f, #536d60);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  z-index: -5;
 }
 
-
-
-.row1{
-   
-    color:rgb(33, 153, 93);
+body,
+html {
+  height: 100%;
 }
-.profileText{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
-    color: rgb(16, 16, 17);
+body {
+  background-color: rgba(240, 240, 236, 0.986);
+}
+.container {
+  justify-content: center;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 42px;
+}
 
+.triangle1 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 250px 400px;
+  border-color: transparent transparent #13385f transparent;
+  transform: rotate(55deg);
+  z-index: -1;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+}
+.triangle2 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 250px 600px;
+  border-color: transparent transparent #4b85c4 transparent;
+  transform: rotate(135deg);
+  z-index: -1;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.14), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+}
+
+.triangle3 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 140px 200px;
+  border-color: transparent transparent transparent rgb(22, 52, 70);
+  z-index: -1;
+}
+.triangle4 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 160px 100px;
+  border-color: transparent transparent transparent rgb(15, 4, 78);
+  z-index: -1;
+}
+.triangle5 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 300px 300px 0 300px;
+  border-color: rgb(86, 183, 240) transparent transparent transparent;
+  z-index: -1;
+}
+.triangle6 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 400px;
+  border-color: transparent transparent transparent rgb(199, 211, 32);
+  z-index: -1;
+}
+.triangle7 {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 400px 0 50px;
+  border-color: rgb(135, 143, 32) transparent transparent transparent;
+  z-index: -1;
+}
+
+.row1 {
+  color: rgb(33, 153, 93);
+}
+.profileText {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  color: rgb(16, 16, 17);
 }
 .flex-grow {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .bmd-layout-canvas {
   flex-grow: 1;
 }
-.bmd-layout-drawer{
-    background-color: rgba(0, 255, 255, 0.308);
+.bmd-layout-drawer {
+  background-color: rgba(0, 255, 255, 0.308);
 }
-.navbar{
-    box-shadow: none !important;
-    margin: 20px;
-    border: transparent;
+.navbar {
+  box-shadow: none !important;
+  margin: 20px;
+  border: transparent;
 }
 .material-icons {
-    font-size: 35px;
+  font-size: 35px;
 }
-.list-group-item:hover{
-    background-color:rgba(0, 255, 255, 0.575);
+.list-group-item:hover {
+  background-color: rgba(0, 255, 255, 0.575);
 }
-.row{
-    
-    margin: 20px;
-    
+.row {
+  margin: 20px;
 }
-.card{
-    background-color: rgb(210, 219, 205);
-    margin: 20px;
-    text-align: center;
+.card {
+  background-color: rgb(210, 219, 205);
+  margin: 20px;
+  text-align: center;
 }
 
-.photo{
-    margin: auto;
-
+.photo {
+  margin: auto;
 }
-
-
 
 /*i3*/
 
-#contact{
-    width:900px;
-    margin:250px auto 0;
-    display:flex;
+#contact {
+  width: 900px;
+  margin: 250px auto 0;
+  display: flex;
 }
 .container .box {
-    position:relative;
-    width: 300px;
-    height:100px;
-    box-sizing:border-box;
-    text-align:center;
-    margin:0 10px;
-    background:#00171d;
-    overflow:hidden;
-    border-radius:4px;
-    box-shadow:0 0 0 2px rgba(0,7,10,1);
+  position: relative;
+  width: 300px;
+  height: 100px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 10px;
+  background: #00171d;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(0, 7, 10, 1);
 }
 .container .box .icon {
-    width:100%;
-    height:100%;
-    background:#00171d;
-    transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background: #00171d;
+  transition: 0.5s;
 }
 .container .box .icon .fa {
-    font-size: 4em;
-    line-height:100px;
-    color: #0ff;
+  font-size: 4em;
+  line-height: 100px;
+  color: #0ff;
 }
 .container .box:hover .icon {
-    transform:scale(0);
+  transform: scale(0);
 }
 .container .box .details {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#03a9f4;
-    transition:0.5s;
-    transform:scale(2);
-    opacity:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  transition: 0.5s;
+  transform: scale(2);
+  opacity: 0;
 }
 .container .box:hover .details {
-    transform:scale(1);
-    opacity:1;
+  transform: scale(1);
+  opacity: 1;
 }
 .container .box .details h3 {
-    margin:0;
-    padding:0;
-    line-height:100px;
-    font-size:24px;
-    color:#fff;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-size: 24px;
+  color: #fff;
 }
 .container .box .details:nth-child(2) .details {
-    background:#e91e63;
+  background: #e91e63;
 }
 .container .box .details:nth-child(2) .details {
-    background:#607d8b;
+  background: #607d8b;
 }
